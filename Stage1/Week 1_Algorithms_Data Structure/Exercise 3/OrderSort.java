@@ -80,13 +80,11 @@ public class OrderSort {
             orders[i] = new Order(orderId, customerName, totalPrice);
         }
 
-        // Display orders before sorting
         System.out.println("\nOrders before sorting:");
         for (Order order : orders) {
             System.out.println(order);
         }
 
-        // Perform Bubble Sort and display sorted orders
         Order[] bubbleSortedOrders = orders.clone();
         bubbleSort(bubbleSortedOrders);
         System.out.println("\nOrders after Bubble Sort:");
@@ -94,7 +92,6 @@ public class OrderSort {
             System.out.println(order);
         }
 
-        // Perform Quick Sort and display sorted orders
         Order[] quickSortedOrders = orders.clone();
         quickSort(quickSortedOrders, 0, quickSortedOrders.length - 1);
         System.out.println("\nOrders after Quick Sort:");
