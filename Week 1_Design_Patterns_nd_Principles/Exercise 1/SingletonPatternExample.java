@@ -1,4 +1,4 @@
-package Exercise1;
+
 public class SingletonPatternExample {
 
     public static class Logger {
