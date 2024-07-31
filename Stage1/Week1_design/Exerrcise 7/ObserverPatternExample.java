@@ -74,18 +74,18 @@ public class ObserverPatternExample {
     }
 
     public static void main(String[] args) {
-        StockMarket stockMarket = new StockMarket("AAPL", 150.00);
-
-        Observer mobileApp = new MobileApp("MobileApp");
-        Observer webApp = new WebApp("WebApp");
-
+        StockMarket stockMarket = new StockMarket("GOOGL", 1200.00);
+    
+        Observer mobileApp = new MobileApp("AndroidApp");
+        Observer webApp = new WebApp("BrowserApp");
+    
         stockMarket.registerObserver(mobileApp);
         stockMarket.registerObserver(webApp);
-
-        stockMarket.setStockPrice(155.00);
-        stockMarket.setStockPrice(160.00);
-
+    
+        stockMarket.setStockPrice(1250.00);
+        stockMarket.setStockPrice(1300.00);
+    
         stockMarket.deregisterObserver(webApp);
-        stockMarket.setStockPrice(165.00);
+        stockMarket.setStockPrice(1350.00);
     }
-}
+}    

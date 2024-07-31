@@ -53,12 +53,12 @@ public class StrategyPatternExample {
     public static void main(String[] args) {
         PaymentContext context = new PaymentContext();
 
-        PaymentStrategy creditCardPayment = new CreditCardPayment("1234567890123456", "John Doe", "123", "12/25");
+        PaymentStrategy creditCardPayment = new CreditCardPayment("123456789", "Ani Mujee", "123", "12/28");
         context.setPaymentStrategy(creditCardPayment);
-        context.pay(100);
+        context.pay(190);
 
-        PaymentStrategy payPalPayment = new PayPalPayment("johndoe@example.com", "password");
+        PaymentStrategy payPalPayment = new PayPalPayment("ani05@sample.com", "password");
         context.setPaymentStrategy(payPalPayment);
-        context.pay(200);
+        context.pay(700);
     }
 }

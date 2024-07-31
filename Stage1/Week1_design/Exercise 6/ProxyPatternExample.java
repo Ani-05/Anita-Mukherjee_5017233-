@@ -14,7 +14,7 @@ class RealImage implements Image {
     }
 
     private void loadFromRemoteServer() {
-        System.out.println("Loading image from remote server: " + fileName);
+        System.out.println("Loading image: " + fileName);
     }
 
     @Override
