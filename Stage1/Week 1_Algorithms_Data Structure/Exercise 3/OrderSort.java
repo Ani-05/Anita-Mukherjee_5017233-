@@ -61,21 +61,21 @@ public class OrderSort {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of orders: ");
         int n = scanner.nextInt();
-        scanner.nextLine();  // Consume newline
+        scanner.nextLine();  
 
         Order[] orders = new Order[n];
         for (int i = 0; i < n; i++) {
             System.out.println("Enter details for order #" + (i + 1) + ":");
             System.out.print("Order ID: ");
             int orderId = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine(); 
 
             System.out.print("Customer Name: ");
             String customerName = scanner.nextLine();
 
             System.out.print("Total Price: ");
             double totalPrice = scanner.nextDouble();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine(); 
 
             orders[i] = new Order(orderId, customerName, totalPrice);
         }
