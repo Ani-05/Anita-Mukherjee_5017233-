@@ -116,11 +116,11 @@ class Search {
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            Product midProduct = products[mid];
+            Product midP = products[mid];
 
-            int cmp = midProduct.getProductName().compareToIgnoreCase(targetName);
+            int cmp = midP.getProductName().compareToIgnoreCase(targetName);
             if (cmp == 0) {
-                return midProduct;
+                return midP;
             } else if (cmp < 0) {
                 low = mid + 1;
             } else {
@@ -137,11 +137,11 @@ class Search {
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            Product midProduct = products[mid];
+            Product midP = products[mid];
 
-            int cmp = midProduct.getCategory().compareToIgnoreCase(targetCategory);
+            int cmp = midP.getCategory().compareToIgnoreCase(targetCategory);
             if (cmp == 0) {
-                return midProduct;
+                return midP;
             } else if (cmp < 0) {
                 low = mid + 1;
             } else {
