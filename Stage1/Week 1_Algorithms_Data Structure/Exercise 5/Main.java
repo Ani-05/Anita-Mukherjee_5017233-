@@ -103,16 +103,16 @@ public class Main {
         System.out.println("Traversing tasks:");
         taskList.traverseTasks();
         
-        System.out.println("\nSearching for task with ID 2:");
-        Task task = taskList.searchTask(2);
+        System.out.println("\nSearching for task with ID 3:");
+        Task task = taskList.searchTask(3);
         if (task != null) {
             System.out.println(task);
         } else {
             System.out.println("Task not found.");
         }
         
-        System.out.println("\nDeleting task with ID 2:");
-        taskList.deleteTask(2);
+        System.out.println("\nDeleting task with ID 3:");
+        taskList.deleteTask(3);
         
         System.out.println("\nTraversing tasks after deletion:");
         taskList.traverseTasks();

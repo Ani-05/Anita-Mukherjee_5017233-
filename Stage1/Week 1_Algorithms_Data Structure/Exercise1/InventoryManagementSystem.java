@@ -113,12 +113,10 @@ class Inventory {
             System.out.println("No products found.");
         } else {
             for (Product product : products_list) {
-                System.out.println("--------------------------------------------------");
                 System.out.printf("ID: %s\n", product.getProductId());
                 System.out.printf("Name: %s\n", product.getProductName());
                 System.out.printf("Quantity: %d\n", product.getQuantity());
                 System.out.printf("Price: %.2f\n", product.getPrice());
-                System.out.println("--------------------------------------------------");
             }
         }
     }
@@ -141,7 +139,6 @@ public class InventoryManagementSystem {
         Product updatedProduct1 = new Product("P01", "Updated Product 1", 150, 150.0);
         inventory.updateProduct(updatedProduct1);
 
-        // Displaying a single product
         System.out.println("\nDetails of Product ID P01:");
         Product singleProduct = inventory.getProduct("P01");
         if (singleProduct != null) {
@@ -150,10 +147,8 @@ public class InventoryManagementSystem {
             System.out.println("Product not found.");
         }
 
-        // Deleting a product
         inventory.deleteProduct("P02");
 
-        // Displaying all products after deletion
         inventory.displayAllProducts();
     }
 }

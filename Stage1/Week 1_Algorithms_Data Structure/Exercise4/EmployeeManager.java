@@ -100,9 +100,9 @@ public class EmployeeManager {
     public static void main(String[] args) {
         EmployeeManager manager = new EmployeeManager(10);
 
-        manager.addEmployee(new Employee(1, "John Doe", "Developer", 50000));
-        manager.addEmployee(new Employee(2, "Jane Smith", "Manager", 60000));
-        manager.addEmployee(new Employee(3, "Emily Davis", "Designer", 55000));
+        manager.addEmployee(new Employee(1, "John", "Developer", 40000));
+        manager.addEmployee(new Employee(2, "JRachael", "Designer", 50000));
+        manager.addEmployee(new Employee(3, "Gordwan", "HR", 55000));
 
         System.out.println("All Employees:");
         manager.traverseEmployees();
